@@ -1,14 +1,25 @@
-application: rate-exchange
-version: 2
+application: openexchangerates
+version: 1
 runtime: python27
 api_version: 1
 threadsafe: true
 
 handlers:
 
--   url: /google26b2c7c74e3d07e5.html
-    static_files: google26b2c7c74e3d07e5.html
-    upload: google26b2c7c74e3d07e5.html
+-   url: /currencies-en_US.json
+    static_files: currencies-en_US.json
+    upload: currencies-en_US.json
+    mime_type: application/json; charset=UTF-8
+
+-   url: /currencies-en_UK.json
+    static_files: currencies-en_UK.json
+    upload: currencies-en_UK.json
+    mime_type: application/json; charset=UTF-8
+
+-   url: /currencies-ro_RO.json
+    static_files: currencies-ro_RO.json
+    upload: currencies-ro_RO.json
+    mime_type: application/json; charset=UTF-8
 
 -   url: /robots.txt
     static_files: robots.txt
